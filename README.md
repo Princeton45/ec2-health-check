@@ -3,7 +3,7 @@
 ## Overview
 I created a monitoring system that checks the status of EC2 instances using Python and AWS Boto3. The infrastructure is managed through Terraform, ensuring consistent and reproducible deployments.
 
-![diagram](https://github.com/Princeton45ec2-health-check/blob/main/images/diagram.png)
+![diagram](https://github.com/Princeton45/ec2-health-check/blob/main/images/diagram.png)
 
 ## Prerequisites
 - AWS Account  
