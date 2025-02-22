@@ -1,7 +1,7 @@
 #  Health Check: EC2 Status Checks
 
 ## Overview
-I created a monitoring script with Python that checks the status of EC2 instances every 5 minutes using Python and AWS Boto3. The infrastructure is managed through Terraform, ensuring consistent and reproducible deployments.
+I created a monitoring script with Python that checks the status of EC2 instances every 5 seconds using Python and AWS Boto3. The infrastructure is managed through Terraform, ensuring consistent and reproducible deployments.
 
 ![diagram](https://github.com/Princeton45/ec2-health-check/blob/main/images/diagram.png)
 
@@ -39,7 +39,7 @@ Created a Python script that:
 - Connects to AWS using Boto3
 - Retrieves EC2 instance statuses
 - Displays results in the console
-- Runs continuous monitoring every 5 minutes
+- Runs continuous monitoring every 5 seconds
 
 ```python
 # Import required libraries

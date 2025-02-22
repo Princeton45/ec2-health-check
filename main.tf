@@ -114,7 +114,7 @@ output "server-ips" {
 }
 
 resource "aws_instance" "myapp-server" {
-  count                       = 3
+  count                       = 1
   ami                         = data.aws_ami.amazon-linux-image.id
   instance_type               = var.instance_type
   key_name                    = "myapp-key"
