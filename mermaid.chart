@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph Infrastructure
+        A[Terraform] -->|Provisions| B[EC2 Instances]
+        A -->|Creates| C[IAM Roles]
+        A -->|Sets up| D[Security Groups]
+    end
+
+    subgraph Monitoring Application
+        E[Python Script] -->|Initialize| F[Boto3 Client]
+        F -->|API Calls| G[AWS SDK]
+        G -->|Query| B
+        E -->|Sets| H[Monitoring Interval]
+        H -->|Triggers| E
+    end
+
+    subgraph Status Checks
+        B -->|Reports| I[System Status]
+        B -->|Reports| J[Instance Status]
+        I -->|Displays| K[Console Output]
+        J -->|Displays| K
+    end
+
+    style A fill:#f96,stroke:#333
+    style B fill:#9cf,stroke:#333
+    style C fill:#fc9,stroke:#333
+    style D fill:#fc9,stroke:#333
+    style E fill:#9f9,stroke:#333
+    style F fill:#f9f,stroke:#333
+    style G fill:#f9f,stroke:#333
+    style H fill:#ff9,stroke:#333
+    style I fill:#9ff,stroke:#333
+    style J fill:#9ff,stroke:#333
+    style K fill:#ccc,stroke:#333
