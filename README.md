@@ -1,16 +1,9 @@
 # EC2 Health Check Monitor
 
 ## Overview
-I created a monitoring system that checks the status of EC2 instances using Python and AWS Boto3. The infrastructure is managed through Terraform, ensuring consistent and reproducible deployments.
+I created a monitoring script with Python that checks the status of EC2 instances using Python and AWS Boto3. The infrastructure is managed through Terraform, ensuring consistent and reproducible deployments.
 
 ![diagram](https://github.com/Princeton45/ec2-health-check/blob/main/images/diagram.png)
-
-## Prerequisites
-- AWS Account  
-- Python 3.x
-- Terraform
-- AWS CLI configured
-- Required Python packages (listed in requirements.txt)
 
 ## Infrastructure Setup
 I used Terraform to provision the following AWS resources:
@@ -43,8 +36,3 @@ Successfully implemented automated health checking for:
 
 ![Monitoring Results](images/results.png)
 
-## Future Improvements
-- Add email notifications
-- Implement dashboard visualization
-- Include CloudWatch metrics
-- Add automated recovery actions
