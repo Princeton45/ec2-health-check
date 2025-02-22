@@ -5,6 +5,8 @@ I created a monitoring script with Python that checks the status of EC2 instance
 
 ![diagram](https://github.com/Princeton45/ec2-health-check/blob/main/images/diagram.png)
 
+Documentation: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html
+
 ## How It Works
 1. Infrastructure is deployed via Terraform
    - EC2 instances are created and configured through IaC
